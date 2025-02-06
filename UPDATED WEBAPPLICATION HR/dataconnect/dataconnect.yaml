@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "updatedwebapplicationhr"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "updatedwebapplicationhr-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
